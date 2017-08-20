@@ -1,0 +1,11 @@
+[Unit]
+Description=Unit to run python script for pwn led
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/Led/pwm_led.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
