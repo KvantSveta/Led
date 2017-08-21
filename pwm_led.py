@@ -20,9 +20,9 @@ signal.signal(signal.SIGTERM, handler)
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
-RED = 17
+RED = 22
 GREEN = 27
-BLUE = 22
+BLUE = 17
 
 GPIO.setup(RED, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(GREEN, GPIO.OUT, initial=GPIO.LOW)
